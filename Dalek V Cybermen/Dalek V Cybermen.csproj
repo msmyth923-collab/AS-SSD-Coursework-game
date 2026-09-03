@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7A3FB23-CB3F-4C6F-BA3F-AF4F31A01835}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dalek_V_Cybermen</RootNamespace>
+    <AssemblyName>Dalek V Cybermen</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="After Game Forms\Lose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="After Game Forms\Lose.Designer.cs">
+      <DependentUpon>Lose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="After Game Forms\Win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="After Game Forms\Win.Designer.cs">
+      <DependentUpon>Win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="after login forms\scoreboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="after login forms\scoreboard.Designer.cs">
+      <DependentUpon>scoreboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="after login forms\TheGameQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="after login forms\TheGameQuiz.Designer.cs">
+      <DependentUpon>TheGameQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Before login forms CODED\Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Before login forms CODED\Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Before login forms CODED\registor form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Before login forms CODED\registor form.Designer.cs">
+      <DependentUpon>registor form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Before login forms CODED\Welcome Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Before login forms CODED\Welcome Form.Designer.cs">
+      <DependentUpon>Welcome Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bullet.cs" />
+    <Compile Include="diff questions classes\EasyQues.cs" />
+    <Compile Include="diff questions classes\HardQues.cs" />
+    <Compile Include="diff questions classes\NormalQues.cs" />
+    <Compile Include="Diffculty classes\Easy.cs" />
+    <Compile Include="after login forms\Diffculty selction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="after login forms\Diffculty selction.Designer.cs">
+      <DependentUpon>Diffculty selction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="after login forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="after login forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diffculty classes\Hard.cs" />
+    <Compile Include="drwhoSound Player.cs" />
+    <Compile Include="EnsureDifficultySelectedException.cs" />
+    <Compile Include="Help forms\GameHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help forms\GameHelp.Designer.cs">
+      <DependentUpon>GameHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help forms\Help Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help forms\Help Login.Designer.cs">
+      <DependentUpon>Help Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help forms\Help Registor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help forms\Help Registor.Designer.cs">
+      <DependentUpon>Help Registor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="after login forms\Main Menu Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="after login forms\Main Menu Form.Designer.cs">
+      <DependentUpon>Main Menu Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diffculty classes\Normal.cs" />
+    <Compile Include="Help forms\MainMenu help Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help forms\MainMenu help Form.Designer.cs">
+      <DependentUpon>MainMenu help Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player Class.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz\quizClass.cs" />
+    <Compile Include="XmlSerialize.cs" />
+    <EmbeddedResource Include="After Game Forms\Lose.resx">
+      <DependentUpon>Lose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="After Game Forms\Win.resx">
+      <DependentUpon>Win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="after login forms\scoreboard.resx">
+      <DependentUpon>scoreboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="after login forms\TheGameQuiz.resx">
+      <DependentUpon>TheGameQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Before login forms CODED\Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Before login forms CODED\registor form.resx">
+      <DependentUpon>registor form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Before login forms CODED\Welcome Form.resx">
+      <DependentUpon>Welcome Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="after login forms\Diffculty selction.resx">
+      <DependentUpon>Diffculty selction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="after login forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help forms\GameHelp.resx">
+      <DependentUpon>GameHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help forms\Help Login.resx">
+      <DependentUpon>Help Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help forms\Help Registor.resx">
+      <DependentUpon>Help Registor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="after login forms\Main Menu Form.resx">
+      <DependentUpon>Main Menu Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help forms\MainMenu help Form.resx">
+      <DependentUpon>MainMenu help Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dalek left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dalek up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dalek down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dalek right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ammo-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cright1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cleft1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cdown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cup1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medkit_font_awesome-red.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyberman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dalek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC _ Computer - Geometry Dash - Miscellaneous - Difficulty Faces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WASD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WASD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Science.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maths.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\awwdawdsdawd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beghin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favsubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yrgrp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noaccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirm password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginWelcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewelcom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lnfkjaebfvjkhb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blurred_galaxy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngimg.com - cloud_PNG112272.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city cool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\just abbwuidhryauchbv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_who_victory.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_who_defeat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\awdawdawd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signupbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainmenubackground.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
